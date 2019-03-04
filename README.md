@@ -1,2 +1,0 @@
-# uploader
-Created with CodeSandbox
