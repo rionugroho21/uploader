@@ -1,12 +1,12 @@
 import { upload, download } from './service';
 export default class Uploader {
   constructor() {
-    var self = this;
+    const self = this;
     self.btnImage();
   }
 
   btnImage = () => {
-    var self = this;
+    const self = this;
     const preview = document.getElementById('preview');
     const miniPreview = document.getElementById('uploaded-image');
     const input = document.getElementById('chooseImgButton');
@@ -29,7 +29,7 @@ export default class Uploader {
   };
 
   uploadImg = b64 => {
-    var self = this;
+    const self = this;
     upload(b64)
       .then(res => {
         self.downloadJSON(res.data.uri);
